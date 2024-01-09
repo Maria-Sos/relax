@@ -1,4 +1,4 @@
-const time = 0.5;
+const time = 5;
 let minutesTime = time *60;
 
 const calculateTime = () => {
@@ -6,10 +6,12 @@ const calculateTime = () => {
     let minutes = Math.floor(minutesTime/60);
     let sec = minutesTime%60
 
+    if(sec < 10) sec = `0${sec}`;
+
     waves.textContent = `${minutes} : ${sec}`;
     minutesTime--
 
-    console.log(minutesTime)
+    
     if(minutesTime < 0) {
         clearInterval(timer);
         minutesTime = 0;
