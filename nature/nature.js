@@ -1,3 +1,11 @@
+const start = document.querySelector('#btn');
+
+start.addEventListener('click', function() {
+    const audio = document.querySelector("#player");
+    audio.paused ? audio.play() : audio.pause();
+    document.querySelector('#myVideo').play();
+});
+
 const time = 5;
 let minutesTime = time *60;
 
@@ -16,7 +24,6 @@ const calculateTime = () => {
         clearInterval(timer);
         minutesTime = 0;
     }
-
+    
 }
-
 let timer = setInterval(calculateTime, 1000);

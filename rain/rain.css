@@ -19,3 +19,14 @@
     min-width: 100%;
     z-index: -10;
 }
+
+#btn {
+    margin-left: 5%;
+    margin-top: 10%;
+    height: 55px;
+    background-color: #f9f8f72e;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #f0f3f5;
+}
