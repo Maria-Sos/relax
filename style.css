@@ -6,7 +6,9 @@
 
 h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
+    display: 0;
+    opacity: 0;
 }
 
 #btn-container {
@@ -22,11 +24,14 @@ h1 {
     border: none;
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
+    display: 0;
+    opacity: 0;
+    
 }
 
 #btn:hover {
     background: linear-gradient(to right, #ACB6E5, #74ebd5);
-    }
+}
 
 a {
     text-decoration: none;
@@ -41,4 +46,6 @@ a {
     min-height: 100%;
     min-width: 100%;
     z-index: -10;
+    display: 0;
+    opacity: 0;
 }

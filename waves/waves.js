@@ -1,9 +1,14 @@
 const start = document.querySelector('#btn');
+const back = document.querySelector('.back');
 
 start.addEventListener('click', function() {
     const audio = document.querySelector("#player");
     audio.paused ? audio.play() : audio.pause();
     document.querySelector('#myVideo').play();
+});
+
+back.addEventListener('click', function() {
+    history.back();
 });
 
 const time = 5;
@@ -28,3 +33,9 @@ const calculateTime = () => {
 }
 
 let timer = setInterval(calculateTime, 1000);
+
+gsap.to('#waves, #myVideo, #btn', {
+    duration: 2,
+    disply: 1,
+    opacity: 1,
+})

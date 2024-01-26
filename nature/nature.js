@@ -1,4 +1,9 @@
 const start = document.querySelector('#btn');
+const back = document.querySelector('.back');
+
+back.addEventListener('click', function() {
+    history.back();
+});
 
 start.addEventListener('click', function() {
     const audio = document.querySelector("#player");
@@ -27,3 +32,10 @@ const calculateTime = () => {
     
 }
 let timer = setInterval(calculateTime, 1000);
+
+gsap.to('#nature, #myVideo, #btn', {
+    duration: 2,
+    disply: 1,
+    opacity: 1,
+})
+

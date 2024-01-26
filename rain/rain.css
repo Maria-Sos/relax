@@ -9,6 +9,8 @@
     background: linear-gradient(to right, #98e4c4, #f0f3f5);
     border-radius: 20px;
     padding: 30px;
+    display: 0;
+    opacity: 0;
 }
 
 #myVideo {
@@ -18,10 +20,13 @@
     min-height: 100%;
     min-width: 100%;
     z-index: -10;
+    display: 0;
+    opacity: 0;
 }
 
 #btn {
     margin-left: 5%;
+    margin-right: 5%;
     margin-top: 10%;
     height: 55px;
     background-color: #f9f8f72e;
@@ -29,4 +34,11 @@
     border-radius: 15px;
     cursor: pointer;
     color: #f0f3f5;
+    display: 0;
+    opacity: 0;
+}
+
+#btn:hover {
+    background: linear-gradient(to right, #98e4c4, #f0f3f5);
+    color: black;
 }
