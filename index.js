@@ -3,7 +3,7 @@ gsap.to('h1, #btn, #myVideo', {
     scale: 1,
     opacity: 1,
     stagger: 0.1
-})
+});
 
 document.querySelector('.btn-waves').addEventListener('mouseover', () => {
     gsap.to('.btn-waves', {
@@ -12,7 +12,7 @@ document.querySelector('.btn-waves').addEventListener('mouseover', () => {
         repeat: 1,
         yoyo: 1
     })
-})
+});
 
 document.querySelector('.btn-nature').addEventListener('mouseover', () => {
     gsap.to('.btn-nature', {
@@ -21,7 +21,7 @@ document.querySelector('.btn-nature').addEventListener('mouseover', () => {
         repeat: 1,
         yoyo: 1
     })
-})
+});
 
 document.querySelector('.btn-rain').addEventListener('mouseover', () => {
     gsap.to('.btn-rain', {
@@ -30,4 +30,4 @@ document.querySelector('.btn-rain').addEventListener('mouseover', () => {
         repeat: 1,
         yoyo: 1
     })
-})
+});

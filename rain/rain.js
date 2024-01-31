@@ -24,12 +24,10 @@ const calculateTime = () => {
     waves.textContent = `${minutes} : ${sec}`;
     minutesTime--
 
-    
     if(minutesTime < 0) {
         clearInterval(timer);
         minutesTime = 0;
     }
-
 }
 
 let timer = setInterval(calculateTime, 1000);

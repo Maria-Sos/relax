@@ -28,7 +28,6 @@ const calculateTime = () => {
         clearInterval(timer);
         minutesTime = 0;
     }
-
 }
 
 let timer = setInterval(calculateTime, 1000);
